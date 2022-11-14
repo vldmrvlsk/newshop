@@ -50,6 +50,30 @@
                     <img src="img/item-tre.jpg" width="156" height="120" alt="Набор мебели «Тре»">
                 </a>
             </li>
+            <li>
+                <a class="product-card product-card-new" href="product.php?product_id=7">
+                    <h3>Люстра</h3>
+                    <p>как у бабушки</p>
+                    <span class="price">11560</span>
+                    <img src="img/item-default-old-lamp.jpg" width="156" height="120" alt="Набор мебели «Тре»">
+                </a>
+            </li>
+            <li>
+                <a class="product-card product-card-new" href="product.php?product_id=8">
+                    <h3>Дo</h3>
+                    <p>Лампа</p>
+                    <span class="price">3250</span>
+                    <img src="img/item-do.jpg" width="156" height="120" alt="Набор мебели «Тре»">
+                </a>
+            </li>
+            <li>
+                <a class="product-card product-card-new" href="product.php?product_id=9">
+                    <h3>Епеус</h3>
+                    <p>Печатная машинка</p>
+                    <span class="price">5680</span>
+                    <img src="img/item-epeus.jpg" width="156" height="120" alt="Набор мебели «Тре»">
+                </a>
+            </li>
         </ul>
     </div>
 </section>
