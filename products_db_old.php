@@ -1,10 +1,6 @@
 <?php
 function get_products() {
-    return [
-        '1' => [
-            'title' => 'Лампа Мсеюлида',
-            'url' => 'img/item-mseyulida.jpg',
-        ],
+    return ['1' => [ 'title' => 'Лампа Мсеюлида',  'url' => 'img/item-mseyulida.jpg', ],
 
         '2' => [
             'title' => 'Диван Рмаериби',
