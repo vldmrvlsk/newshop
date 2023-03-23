@@ -1,6 +1,6 @@
 <footer class="site-footer">
     <div class="container">
-        <p class="copyright">© Кекс, 2019</p>
+        <p class="copyright">© Vova, 2023</p>
         <ul class="navigation-list">
             <li><a href="index.php?page=catalog">Каталог</a></li>
             <li><a href="delivery.html">Доставка</a></li>
