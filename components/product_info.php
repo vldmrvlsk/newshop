@@ -8,6 +8,8 @@
         <img src="<?= $item['image_url'] ?>" width="510" height="392" alt="<?= $item['name'] ?>">
         <p class="price"><del><?= $item['price']*1.1 ?></del> <?= $item['price'] ?></p>
         <p><?= $item['description'] ?></p>
-
     </div>
 </section>
+<script src="../script.js">
+
+</script>
