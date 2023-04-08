@@ -1,3 +1,6 @@
+<head>
+    <link rel="stylesheet" href="style2.css">
+</head>
 <section class="form">
     <div class="container">
         <h1 class="catalog-title">Добавление товара</h1>
