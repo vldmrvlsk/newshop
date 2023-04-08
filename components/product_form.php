@@ -1,3 +1,6 @@
+<head>
+    <link rel="stylesheet" href="style2.css">
+</head>
 <section class="form">
     <div class="container">
         <h1 class="catalog-title">Добавление товара</h1>
@@ -19,6 +22,28 @@
                 <input type="file" name="picture[]" id="id4" multiple>
             </p>
             <p>
+                <label for="id5">Тип:</label>
+                <select name="type" id="id5">
+                    <option value="furniture">Мебель</option>
+                    <option value="lightning">Освещение</option>
+                    <option value="furniture">Гарнитура</option>
+                    <option value="furniture">Предметы</option>
+                    <option value="furniture">Комплекты</option>
+                    <option value="furniture">Другое</option>
+                </select>
+            </p>
+            <p>
+                <label for="id6">Цвет:</label>
+<!--                <select name="colors" multiple size="5" id="id6">-->
+                <select name="colors" id="id6">
+                    <option value="blue">Синий</option>
+                    <option value="green">Зеленый</option>
+                    <option value="red">Красный</option>
+                    <option value="black">Черный</option>
+                    <option value="white">Белый</option>
+                    <option value="brown">Коричневый</option>
+                </select>
+            </p>
             <p><input type="button" value="Создать" onclick="validate(this.form)"></p>
         </form>
     </div>
