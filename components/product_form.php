@@ -49,6 +49,7 @@
     </div>
 </section>
 <script>
+
     function validate(xxx) {
         var formData = new FormData(xxx);
         if (xxx.name.value === '')
@@ -70,8 +71,55 @@
                 alert("Файл не является форматом JPG или PNG!");
                 return;
             }
-            alert("Поздравляю! Вы успешно добавили товар!");
-            xxx.submit();
+
+            var result = false;
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'checkname.php', true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.onreadystatechange = function() {
+                if (this.readyState === 4 && this.status === 200) {
+                    var response = this.responseText;
+                    // alert (response);
+                    // console.log(response);
+                    if(xhr.responseText.trim() == "1") {
+                        alert('Товар с таким наименованием уже существует!');
+                        // console.log(response);
+                    } else {
+                        alert("Поздравляю! Форма заполнена верно!");
+                        xxx.submit();
+                    }
+                }
+            };
+
+            xhr.send('name=' + encodeURIComponent(xxx.name.value));
+
+           }
         }
-    }
+
+
+    //
+    // function deleteProduct(id) {
+    //     if (confirm("Вы уверены, что хотите удалить этот товар?")) {
+    //         var xhr = new XMLHttpRequest();
+    //         xhr.open('POST', 'deleteproduct.php', true);
+    //         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    //         xhr.onreadystatechange = function() {
+    //             if (xhr.readyState === 4 && xhr.status === 200) {
+    //                 var response = xhr.responseText;
+    //                 if (response === 'success') {
+    //                     alert('Товар успешно удален!');
+    //                     location.reload();
+    //                 } else {
+    //                     alert('Не удалось удалить товар!');
+    //                 }
+    //             }
+    //         };
+    //         xhr.send('id=' + encodeURIComponent(id));
+    //     }
+    // }
+
+
 </script>
+
+
+
